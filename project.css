@@ -1,62 +1,60 @@
+
 body {
     background-color:#E8F9FF;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .navbar{
+    /*height: 13vh;*/
+    width: 100%;
     display: flex;
-    background-color:#E8F9FF;
+    background-color:#C5BAFF;
     overflow: hidden;
-    gap: 40px;
-    list-style-type: none;
-    font-size: 18px;
+    gap: 0px;
+    list-style: none;
     margin-bottom: 0px;
 
 }
 .navbar a{
-    color:rgb(3, 3, 100);
+    color:black;
+    font-size: 17px;
     text-decoration: none;
-    padding-bottom: 19px;
+    padding-top: 25px;
     display: block;
-    margin-left: 40px;
+    margin-left: 70px;
     position: relative;
 }
-.search-bar{
-    position:absolute;
-    top: 0px;
-    right: 100px;
+.navbar ul{
+    display: flex;
+    list-style: none;
 }
-.loginicon{
-    margin-left: 300px;
-    font-size: 25px;
-    padding-top: 30px;
-    margin-top: 10;
+#click{
+    display: none;
 }
-.glassicon{
-    font-size: 25px;
-    margin-right: 10px;
-    margin-top: 5px;
+.navbar label{
+    display: none;
 }
-.search{
-    padding-left: 140px;
-    padding-bottom: 10px;
+#click:checked~header .navbar ul{
+    display:block;
 }
-
 h1{
     background-color: #C5BAFF;
     color:black;
-    padding-left: 50px;
+    padding-left: 20px;
     font-family: "Averia Serif Libre", serif; 
-    font-size: 40px;
+    font-size: 35px;
     padding-bottom: 0px;
 }
 
 .container{
-    height: 100vh;
+    /*height: 75vh;*/
     background-color:#E8F9FF;
     margin-top: -20px;
     display: grid;
     grid-template-columns: 240px 240px 240px 240px 240px 240px  ;
-    grid-template-rows: 250px 250px 250px 250px 250px ;
+    /* grid-template-rows: 250px 250px 250px 250px 250px ; */
 }
 .ch1,.ch2,.ch3,.ch4,.ch5,.ch6,.ch7,.ch8,.ch8,.ch9{
     background-color:#E8F9FF ;
@@ -145,6 +143,7 @@ h9{
 h10{
     font-size: 20px;
     padding-left: 60px;
+    margin-top: 20px;
 }
 .ch8 img{
     margin-top: 0px;
@@ -159,7 +158,7 @@ h11{
 .ch9 img{
     margin-top: 0px;
     margin-left: 25px;
-    border-radius: 80px;
+    border-radius: 100px;
 }
 .container1{
     background-color: white;
@@ -173,7 +172,6 @@ h12{
     margin-top: 20px;
 }
 .container1{
-    height: 40vh;
     background-color:white;
     display: grid;
     grid-template-columns: 230px 230px 230px 250px 230px 250px;
@@ -197,7 +195,7 @@ h13{
     margin-top: 20px;
 }
 .container2{
-    height: 40vh;
+    /* height: 40vh;*/
     background-color:white;
     display: grid;
     grid-template-columns: 230px 230px 230px 250px 230px 250px;
@@ -222,7 +220,7 @@ h14{
     margin-top: 20px;
 }
 .container3{
-    height: 40vh;
+    /*height: 40vh;*/
     background-color:white;
     display: grid;
     grid-template-columns: 230px 230px 230px 250px 230px 250px;
@@ -246,7 +244,7 @@ h15{
     margin-top: 20px;
 }
 .container4{
-    height: 40vh;
+    /*height: 40vh;*/
     background-color:white;
     display: grid;
     grid-template-columns: 230px 230px 230px 250px 230px 250px;
@@ -260,8 +258,10 @@ h15{
 }
 .bath{
     background-color:#c3bcbc;
-    height: 55vh;
+    /*height: 55vh;*/
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 50px;
 }
@@ -279,13 +279,14 @@ ul p{
 }
 .container5{
     background-color: white;
-    height: 20vh;
+    /*height: 20vh;*/
     margin-top: 50px;
 }
-.container5 h16{
+h16{
     font-size: 20px;
     color: black;
     margin-left: 20px;
+    margin-top: 0px;
 }
 .container5 p{
     color: rgb(53, 45, 45);
@@ -293,4 +294,159 @@ ul p{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 30px;
+}
+/* Media Query for Phones */
+
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 30px;
+        margin-left: 130px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin: 60px 42px;
+        margin-bottom: 75px;
+    }
+    h3 {
+        font-size: 22px;
+        margin-left: 240px;
+        margin-bottom: 50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .navbar ul a {
+        font-size: 14px;
+        margin: 5px 0;
+        
+    }
+
+    .navbar label{
+        display: block;
+        margin-top: -30px;
+    }
+    .navbar ul{
+        display: none;
+        position: absolute;
+        list-style: none;
+        top: 150px;
+        width: 100%;
+        background-color: rgba(245, 222, 179, 0.683);
+        
+    }
+
+    .container {
+        grid-template-columns: repeat(1,auto); 
+        grid-template-rows: repeat(3,auto);
+        
+    }
+.container img{
+        width: 70%;
+        border-radius: 5px;
+}
+    .ch2 img,.ch3 img,.ch4 img,.ch5 img,.ch6 img,.ch7 img,.ch8 img,.ch9 img {
+        height: 300px;
+        width: 400px;
+        margin-left: 50px;
+    }
+    
+.ch8 img,.ch9 img{
+        margin-right: 190px;
+}
+
+
+    h4, h5, h6, h7, h8, h9{
+        font-size: 30px;
+        margin-left: 25%;
+    }
+
+    h10, h11 {
+        font-size: 30px;
+        margin-left: 18%;
+    }
+
+    .container1 {
+        grid-template-columns: repeat(1,auto); 
+        grid-template-rows: repeat(3,auto);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.rw1 img,.rw2 img,.rw3 img,.rw4 img,.rw5 img,.rw6 img {
+        height: 250px;
+        width: 200px;
+        
+}
+
+h12 {
+    font-size: 30px;
+}
+
+.container2 {
+    grid-template-columns: repeat(1,auto); 
+    grid-template-rows: repeat(3,auto);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row1 img,.row2 img,.row3 img,.row4 img,.row5 img,.row6 img {
+    height: 220px;
+    width: 200px;    
+}
+
+h13 {
+font-size: 30px;
+}
+
+.container3 {
+    grid-template-columns: repeat(1,auto); 
+    grid-template-rows: repeat(3,auto);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book1 img,.book2 img,.book3 img,.book4 img,.book5 img,.book6 img {
+    height: 220px;
+    width: 230px;    
+}
+
+h14 {
+font-size: 30px;
+}
+
+.container4 {
+    grid-template-columns: repeat(1,auto); 
+    grid-template-rows: repeat(3,auto);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.call1 img,.call2 img,.call3 img,.call4 img,.call5 img,.call6 img {
+    height: 220px;
+    width: 200px;    
+}
+
+h15 {
+font-size: 30px;
+}
+
+    .bath ul p {
+        font-size: 15px;
+}    
+    .bath ul a {
+        font-size: 10px;
+        margin: 3px 0;
+    }
+
+    .container5 p {
+        font-size: 12px;
+    }
 }
