@@ -303,24 +303,34 @@ h16{
     }
     h1 {
         font-size: 30px;
-        margin-left: 130px;
-        margin-top: 20px;
+        /*margin-left: 130px;
+        margin-top: 20px;*/
+        margin-left: 20%;
+        margin-bottom: 5%;
     }
 
+    .ch1{
+        width: 100%;
+    }
     h2 {
         font-size: 22px;
-        margin: 60px 42px;
-        margin-bottom: 75px;
+        /*margin: 60px 42px;
+        margin-bottom: 75px;*/
+        margin-left: 10%;
+        margin-bottom: 14.5%;
     }
     h3 {
         font-size: 22px;
-        margin-left: 240px;
-        margin-bottom: 50px;
+        /*margin-left: 240px;
+        margin-bottom: 50px;*/
+        margin-left: 48%;
+        margin-bottom: 10%;
     }
 
     .navbar {
         flex-direction: column;
         padding: 5px;
+        width: 100%;
     }
 
     .navbar ul a {
@@ -346,7 +356,7 @@ h16{
     .container {
         grid-template-columns: repeat(1,auto); 
         grid-template-rows: repeat(3,auto);
-        
+        width: 100%;
     }
 .container img{
         width: 70%;
@@ -354,19 +364,29 @@ h16{
 }
     .ch2 img,.ch3 img,.ch4 img,.ch5 img,.ch6 img,.ch7 img,.ch8 img,.ch9 img {
         height: 300px;
-        width: 400px;
-        margin-left: 50px;
+        width: 100%;
+        margin-left: 0px;
     }
     
 .ch8 img,.ch9 img{
         margin-right: 190px;
 }
 
+.mobile1,.mobile2,.mobile3{
+    font-size: 30px;
+    text-align: center;
+}
 
-    h4, h5, h6, h7, h8, h9{
+.mobile4,.mobile5,.mobile6{
+    font-size: 30px;
+    margin-left: 25%;
+}
+
+    /*h4, h5, h6,h7,h8,h9{
         font-size: 30px;
         margin-left: 25%;
-    }
+        text-align: center;
+    }*/
 
     h10, h11 {
         font-size: 30px;
