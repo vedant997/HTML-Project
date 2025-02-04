@@ -420,7 +420,7 @@ h16{
 .rw1 img,.rw2 img,.rw3 img,.rw4 img,.rw5 img,.rw6 img {
         height: 250px;
         width: 200px;
-        
+        margin-left: 40%;
 }
 
 h12 {
@@ -437,7 +437,8 @@ h12 {
 
 .row1 img,.row2 img,.row3 img,.row4 img,.row5 img,.row6 img {
     height: 220px;
-    width: 200px;    
+    width: 200px; 
+    margin-left: 30%;
 }
 
 h13 {
@@ -454,7 +455,8 @@ width: 100%;
 
 .book1 img,.book2 img,.book3 img,.book4 img,.book5 img,.book6 img {
     height: 220px;
-    width: 230px;    
+    width: 230px;
+    margin-left: 30%;    
 }
 
 h14 {
@@ -471,7 +473,8 @@ width: 100%;
 
 .call1 img,.call2 img,.call3 img,.call4 img,.call5 img,.call6 img {
     height: 220px;
-    width: 200px;    
+    width: 200px;
+    margin-left: 30%;    
 }
 
 h15 {
